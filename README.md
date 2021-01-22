@@ -22,5 +22,5 @@ No dependencies.
 
 ## Contributors
 
-- [Bert Van Vreckem](https://github.com/bertvv/) (maintainer)
+- [Werner De Schryver](https://github.com/Wernerdeschryver/) (maintainer)
 
