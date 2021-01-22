@@ -1,0 +1,28 @@
+---
+- name: Create "{{ drupal_install_path }}" dir
+  file:
+    path: "{{ drupal_install_path }}"
+    state: directory
+
+- name: Download drupal in /home/vagrant
+  get_url:
+    url: "https://ftp.drupal.org/files/projects/{{ drupal_version }}.tar.gz"
+    dest: /home/vagrant
+    mode: '777'
+
+- name: Extract drupal into "{{ drupal_install_path }}"
+  unarchive:
+    src: "/home/vagrant/{{ drupal_version }}.tar.gz"
+    dest: "{{ drupal_install_path }}"
+
+- name: Create /sites/default/files/translations dir
+  file:
+    path: "{{ drupal_install_path }}/{{ drupal_version }}/sites/default/files/translations"
+    state: directory
+    mode: '1777'
+
+- name: Create settings.php
+  copy:
+    src: "{{ drupal_install_path }}/{{ drupal_version }}/sites/default/default.settings.php"
+    dest: "{{ drupal_install_path }}/{{ drupal_version }}/sites/default/settings.php"
+    mode: '1777'

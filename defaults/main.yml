@@ -1,0 +1,5 @@
+# roles/wds.drupal/defaults/main.yml
+---
+
+drupal_version: drupal-8.8.6
+drupal_install_path: /home/test

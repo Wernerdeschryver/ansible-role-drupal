@@ -1,0 +1,6 @@
+# roles/wds.drupal/vars/RedHat.yml
+#
+# Distribution-specific variables for RHEL, CentOS, ...
+---
+
+
