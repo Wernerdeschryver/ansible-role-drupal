@@ -13,8 +13,8 @@ No specific requirements
 
 | Variable   | Default | Comments (type)  |
 | :---       | :---    | :---             |
-| `drupal_version` | drupal-8.8.6 | Specify the drupal version to download. Must be in format `drupal-x.y.z` |
-| `drupal_install_path` | /home  | Directory to install Drupal in. |
+| `drupal_version` | `drupal-8.8.6` | Specify the drupal version to download. Must be in format `drupal-x.y.z` |
+| `drupal_install_path` | `/home`  | Directory to install Drupal in. |
 
 ## Dependencies
 
