@@ -4,6 +4,8 @@ An Ansible role for Drupal. Specifically, the responsibilities of this role are 
 
 - Download and extract Drupal.
 
+Note that this role is intended for use in demo environments, not production.
+
 ## Requirements
 
 No specific requirements
